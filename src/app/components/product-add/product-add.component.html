@@ -1,0 +1,6 @@
+<p>product-add works!</p>
+<form [formGroup]="productForm" (ngSubmit)="onHandleSubmit()">
+    <input type="text" formControlName="name" >
+    <input type="text" formControlName="price">
+    <button type="submit" [disabled]="!productForm.valid">submit</button>
+</form>

@@ -1,0 +1,24 @@
+<h2>Quan ly san pham</h2>
+<div class="table-responsive">
+    <table class="table table-primary">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">price</th>
+                <th scope="col">img</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr app-product-item
+            *ngFor="let product of products; let i = index"
+            [product]="product"
+            [index]="i"
+            (onRemove)="removeItem(product.id)"
+            >
+            </tr>
+           
+        </tbody>
+    </table>
+</div>

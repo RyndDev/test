@@ -1,0 +1,10 @@
+<p>product-edit works!</p>
+<form [formGroup]="productForm" (ngSubmit)="onHandleEdit()">
+    <div class="form-group">
+        <input type="text" placeholder="ten sp" formControlName="name">
+    </div>
+    <div class="form-group">
+        <input type="number" placeholder="gia sp" formControlName="price">
+    </div>
+    <button type="submit" >submit</button>
+</form>
